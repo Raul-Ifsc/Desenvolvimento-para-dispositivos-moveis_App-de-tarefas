@@ -1,17 +1,31 @@
-# app_tarefas
+# App de Tarefas
 
-A new Flutter project.
+## Como rodar
 
-## Getting Started
+```bash
+flutter pub get
+flutter run
+```
 
-This project is a starting point for a Flutter application.
+## Estrutura
 
-A few resources to get you started if this is your first Flutter project:
+```
+lib/
+  main.dart
+  models/     tarefa.dart, categoria.dart
+  db/         db_util.dart
+  providers/  tarefa_provider.dart
+  telas/      tela_bem_vindo, listagem, detalhes, form_tarefa, categorias
+  componentes/ tarefa_card, botao_estilizado
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Commits
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Projeto base Flutter
+2. pubspec + models (Tarefa, Categoria) + db_util
+3. TarefaProvider
+4. Telas: bem-vindo e listagem
+5. Telas: detalhes e formulário
+6. Tela: categorias
+7. Componentes: TarefaCard e BotaoEstilizado
+8. main.dart: rotas, tema minimalista, localização PT-BR
